@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+body{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    background:  hsl(257, 40%, 49%) url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/* ----- CONTAINERS ----- */
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+.header .contenedor{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.main .contenedor{
+    display: flex;
+   
+}
+.contenedor__img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ----- CONTENT HOME ----- */
+
+.main-content{
+    padding: 2.5rem;
+}
+.main h2{
+    font-size: 2.25rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1.875rem;
+}
+.main h4{
+    color: rgb(228, 211, 228);
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+/* ----- SOCIAL LINKS ----- */
+
+.nav{
+    padding: 2.25rem;
+    text-align: right;
+}
+.nav a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 100%;
+    border: solid 2px #fff;
+}
+.nav a:nth-child(3){
+    margin-right: 0px;
+}
+.nav a:link{
+    color: #fff;
+}
+.nav a:visited{
+    color: #fff;
+}
+
+/* ----- BUTOMMS ----- */
+
+.btn{    
+    display: inline-block;
+
+    margin-top: 1.6rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 2.5rem;
+}
+.btn-primary{
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    padding: 0.9375rem 4.375rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.281);
+    
+    transition: 0.6s background-color ease;
+}
+/* ----- MEDIA QUERYS ----- */
+
+@media (max-width: 1050px){
+    .main .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main__img{
+        width: 600px;
+        height: 400px;
+    }
+    .nav{
+        text-align: center;
+     }
+ }
